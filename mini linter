@@ -1,0 +1,132 @@
+let story = 'Last weekend, I took literally the most beautiful bike ride of my life. The route is called "The 9W to Nyack" and it actually stretches all the way from Riverside Park in Manhattan to South Nyack, New Jersey. It\'s really an adventure from beginning to end! It is a 48 mile loop and it basically took me an entire day. I stopped at Riverbank State Park to take some extremely artsy photos. It was a short stop, though, because I had a really long way left to go. After a quick photo op at the very popular Little Red Lighthouse, I began my trek across the George Washington Bridge into New Jersey.  The GW is actually very long - 4,760 feet! I was already very tired by the time I got to the other side.  An hour later, I reached Greenbrook Nature Sanctuary, an extremely beautiful park along the coast of the Hudson.  Something that was very surprising to me was that near the end of the route you actually cross back into New York! At this point, you are very close to the end.';
+  
+
+let story1 = 'Last weekend, I took literally the most beautiful bike ride of my life. The route is called "The 9W to Nyack" and it actually stretches all the way from Riverside Park in Manhattan to South Nyack, New Jersey. It\'s really an adventure'
+let story2 = 'from beginning to end! It is a 48 mile loop and it basically took me an entire day. I stopped at Riverbank State Park to take some extremely artsy photos. It was a short stop, though, because I had a really long way left to go.' 
+let story3 = 'After a quick photo op at the very popular Little Red Lighthouse, I began my trek across the George Washington Bridge into New Jersey.  The GW is actually very long - 4,760 feet! I was already very tired by the time I got to the other side.'
+let story4 = 'An hour later, I reached Greenbrook Nature Sanctuary, an extremely beautiful park along the coast of the Hudson.  Something that was very surprising to me was that near the end of the route you actually cross back into New York! At this point, you are very close to the end.'
+
+
+
+let storyWords1 = story1.split(' ');
+// I copy and pasted the array from the console after logging it below.
+// console.log(storyWords1); 
+
+
+let storyWords2 = story2.split(' ');
+// I copy and pasted the array from the console after logging it below.
+// console.log(storyWords2); 
+
+
+
+let storyWords3 = story3.split(' ');
+// I copy and pasted the array from the console after logging it below.
+// console.log(storyWords3); 
+
+
+let storyWords4 = story4.split(' ');
+// I copy and pasted the array from the console after logging it below.
+// console.log(storyWords4); 
+
+
+
+
+function badWords(value) {
+  return value !== 'extremely' && value !== 'literally' && value !== 'actually';
+}
+
+// I pasted the array from the console into a variable here.
+  let storyWordsArray1 = ['Last', 'weekend,', 'I', 'took', 'literally', 'the', 'most', 'beautiful', 'bike', 'ride', 'of', 'my', 'life.', 'The', 'route', 'is', 'called', '"The', '9W', 'to', 'Nyack"', 'and', 'it', 'actually', 'stretches', 'all', 'the', 'way', 'from', 'Riverside', 'Park', 'in', 'Manhattan', 'to', 'South', 'Nyack,', 'New', 'Jersey.', "It's", 'really', 'an', 'adventure'].filter(badWords);
+
+  // I copied the array here after logging.
+  // console.log(storyWords1);
+
+
+  function badWords(value) {
+    return value !== 'extremely' && value !== 'literally' && value !== 'actually';
+  }
+  // I pasted the array from the console into a variable here.
+    let storyWordsArray2 = ['from', 'beginning', 'to', 'end!', 'It', 'is', 'a', '48', 'mile', 'loop', 'and', 'it', 'basically', 'took', 'me', 'an', 'entire', 'day.', 'I', 'stopped', 'at', 'Riverbank', 'State', 'Park', 'to', 'take', 'some', 'extremely', 'artsy', 'photos.', 'It', 'was', 'a', 'short', 'stop,', 'though,', 'because', 'I', 'had', 'a', 'really', 'long', 'way', 'left', 'to', 'go.'].filter(badWords);
+  
+  // I copied the array here after logging.
+    // console.log(storyWords2);
+
+
+    function badWords(value) {
+      return value !== 'extremely' && value !== 'literally' && value !== 'actually';
+    }
+    // I pasted the array from the console into a variable here.
+      let storyWordsArray3 = ['After', 'a', 'quick', 'photo', 'op', 'at', 'the', 'very', 'popular', 'Little', 'Red', 'Lighthouse,', 'I', 'began', 'my', 'trek', 'across', 'the', 'George', 'Washington', 'Bridge', 'into', 'New', 'Jersey.', '', 'The', 'GW', 'is', 'actually', 'very', 'long', '-', '4,760', 'feet!', 'I', 'was', 'already', 'very', 'tired', 'by', 'the', 'time', 'I', 'got', 'to', 'the', 'other', 'side.'].filter(badWords);
+    
+    // I copied the array here after logging.
+      // console.log(storyWords3);
+
+
+      function badWords(value) {
+        return value !== 'extremely' && value !== 'literally' && value !== 'actually';
+      }
+      // I pasted the array from the console into a variable here.
+        let storyWordsArray4 = ['An', 'hour', 'later,', 'I', 'reached', 'Greenbrook', 'Nature', 'Sanctuary,', 'an', 'extremely', 'beautiful', 'park', 'along', 'the', 'coast', 'of', 'the', 'Hudson.', '', 'Something', 'that', 'was', 'very', 'surprising', 'to', 'me', 'was', 'that', 'near', 'the', 'end', 'of', 'the', 'route', 'you', 'actually', 'cross', 'back', 'into', 'New', 'York!', 'At', 'this', 'point,', 'you', 'are', 'very', 'close', 'to', 'the', 'end.'].filter(badWords);
+      
+      // I copied the array here after logging.
+        // console.log(storyWords4);
+
+        
+      // I combined all the array's that I copied from the non-edited logs into this variable.
+      var allStoryWords = ['Last', 'weekend,', 'I', 'took', 'literally', 'the', 'most', 'beautiful', 'bike', 'ride', 'of', 'my', 'life.', 'The', 'route', 'is', 'called', '"The', '9W', 'to', 'Nyack"', 'and', 'it', 'actually', 'stretches', 'all', 'the', 'way', 'from', 'Riverside', 'Park', 'in', 'Manhattan', 'to', 'South', 'Nyack,', 'New', 'Jersey.', "It's", 'really', 'an', 'adventure',
+      'from', 'beginning', 'to', 'end!', 'It', 'is', 'a', '48', 'mile', 'loop', 'and', 'it', 'basically', 'took', 'me', 'an', 'entire', 'day.', 'I', 'stopped', 'at', 'Riverbank', 'State', 'Park', 'to', 'take', 'some', 'extremely', 'artsy', 'photos.', 'It', 'was', 'a', 'short', 'stop,', 'though,', 'because', 'I', 'had', 'a', 'really', 'long', 'way', 'left', 'to', 'go.',
+      'After', 'a', 'quick', 'photo', 'op', 'at', 'the', 'very', 'popular', 'Little', 'Red', 'Lighthouse,', 'I', 'began', 'my', 'trek', 'across', 'the', 'George', 'Washington', 'Bridge', 'into', 'New', 'Jersey.', '', 'The', 'GW', 'is', 'actually', 'very', 'long', '-', '4,760', 'feet!', 'I', 'was', 'already', 'very', 'tired', 'by', 'the', 'time', 'I', 'got', 'to', 'the', 'other', 'side.',
+      'An', 'hour', 'later,', 'I', 'reached', 'Greenbrook', 'Nature', 'Sanctuary,', 'an', 'extremely', 'beautiful', 'park', 'along', 'the', 'coast', 'of', 'the', 'Hudson.', '', 'Something', 'that', 'was', 'very', 'surprising', 'to', 'me', 'was', 'that', 'near', 'the', 'end', 'of', 'the', 'route', 'you', 'actually', 'cross', 'back', 'into', 'New', 'York!', 'At', 'this', 'point,', 'you', 'are', 'very', 'close', 'to', 'the', 'end.']
+
+      counter = 0;
+      for (let i = 0; i < allStoryWords.length; i++) {
+       if  (allStoryWords[i]) counter++;
+        
+      }
+      console.log(`Word Count: ${counter}`);
+
+      counter = 0;
+      for (let i = 0; i < story.length; i++) {
+        if (story[i] == '.' || story[i] == '!') counter++;
+        
+      }
+      console.log(`Sentence Count: ${counter}`);
+
+      // I combined all the array's that I copied from the edited logs into this variable.
+      var betterWords = ['Last', 'weekend,', 'I', 'took', 'the', 'most', 'beautiful', 'bike', 'ride', 'of', 'my', 'life.', 'The', 'route', 'is', 'called', '"The', '9W', 'to', 'Nyack"', 'and', 'it', 'stretches', 'all', 'the', 'way', 'from', 'Riverside', 'Park', 'in', 'Manhattan', 'to', 'South', 'Nyack,', 'New', 'Jersey.', "It's", 'really', 'an', 'adventure',
+      'from', 'beginning', 'to', 'end!', 'It', 'is', 'a', '48', 'mile', 'loop', 'and', 'it', 'basically', 'took', 'me', 'an', 'entire', 'day.', 'I', 'stopped', 'at', 'Riverbank', 'State', 'Park', 'to', 'take', 'some', 'artsy', 'photos.', 'It', 'was', 'a', 'short', 'stop,', 'though,', 'because', 'I', 'had', 'a', 'really', 'long', 'way', 'left', 'to', 'go.',
+      'After', 'a', 'quick', 'photo', 'op', 'at', 'the', 'very', 'popular', 'Little', 'Red', 'Lighthouse,', 'I', 'began', 'my', 'trek', 'across', 'the', 'George', 'Washington', 'Bridge', 'into', 'New', 'Jersey.', '', 'The', 'GW', 'is', 'very', 'long', '-', '4,760', 'feet!', 'I', 'was', 'already', 'very', 'tired', 'by', 'the', 'time', 'I', 'got', 'to', 'the', 'other', 'side.',
+      'An', 'hour', 'later,', 'I', 'reached', 'Greenbrook', 'Nature', 'Sanctuary,', 'an', 'beautiful', 'park', 'along', 'the', 'coast', 'of', 'the', 'Hudson.', '', 'Something', 'that', 'was', 'very', 'surprising', 'to', 'me', 'was', 'that', 'near', 'the', 'end', 'of', 'the', 'route', 'you', 'cross', 'back', 'into', 'New', 'York!', 'At', 'this', 'point,', 'you', 'are', 'very', 'close', 'to', 'the', 'end.']
+
+
+     var counter = 0;
+      for (let i = 0; i < betterWords.length; i++) {
+        if (betterWords[i] == 'really') counter++;
+    
+        
+      }
+      console.log(`"really" has been used ${counter} times.`);
+
+
+   var counter = 0;
+   for (let i = 0; i < betterWords.length; i++) {
+     if (betterWords[i] == 'very') counter++;
+   
+     
+   }
+   console.log(`"very' has been used ${counter} times.`);
+
+
+
+     var counter = 0;
+     for (let i = 0; i < betterWords.length; i++) {
+       if (betterWords[i] == 'basically') counter++;
+   
+       
+     }
+     console.log(`"basically" has been used ${counter} times.`);
+
+
+
+      var betterWordsString = betterWords.join(' ');
+      console.log(betterWordsString);
